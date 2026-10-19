@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta 
+<title>Pioneer Property Management | Home</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        color: #0f172a;
+      }
+      body {
+        overscroll-behavior: none;
+      }
+    }
+    .card-clean-hover {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-clean-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 30px -10px rgba(15, 23, 42, 0.07);
+      border-color: #cbd5e1;
+    }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: "#fff8f1",
+              100: "#feeedb",
+              500: "#fe932c",
+              600: "#e67a14",
+              700: "#904d00",
+            },
+            slate: {
+              850: "#131b2e",
+              900: "#0b1426",
+            }
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            display: ["Plus Jakarta Sans", "sans-serif"],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white font-sans text-slate-850 antialiased selection:bg-brand-500 selection:text-white">
+<!-- Minimalist White Navbar identical to finalized Home -->
+<header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 transition-all duration-200">
+<div class="max-w-7xl mx-auto h-20 px-6 sm:px-8 flex items-center justify-between">
+<!-- Brand Logo & Title -->
+<a class="flex items-center gap-3.5 group" href="#">
+<img alt="Pioneer Property Management Logo" class="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxk3KRIvnSmpsS5wVe8uQpuNx6MkZYGAurDU9mLPjet1xoI01oW3htb77WoEfW-o1F-X97GJc7fXbahszz27QaZpNyFLFhAGl5-OmI0ImErT1pseXqozcDf_nm3pxU_fk9xDnqjhGiP3ydKlqL6Pj8FSLsf2qqXKWaSpIoRDIFBOXnEGJzmvs01On1e2iyliRx7uGtQvVCN8HMQjNjchbdaVHZ6P_liVHEkgLAKuRDjcIo_Ccm3usiAZ5O-bULkpy9k1A"/>
+<div class="flex flex-col">
+<span class="font-display font-bold text-slate-900 text-base md:text-lg tracking-tight uppercase leading-none">Pioneer Property Management</span>
+<span class="text-[11px] font-semibold text-slate-500 tracking-wider uppercase mt-1">PM (3) 0162 • LPPEH Registered</span>
+</div>
+</a>
+<!-- Navigation Links -->
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-sm font-medium text-slate-600 hover:text-slate-950 transition-colors" data-path="home" href="index.html">Home</a>
+<a aria-current="page" class="text-sm font-semibold text-slate-900 border-b-2 border-brand-500 pb-0.5" data-path="about-us" href="about.html">About Us</a>
+<a class="text-sm font-medium text-slate-600 hover:text-slate-950 transition-colors" data-path="services" href="services.html">Services</a>
+<a class="text-sm font-medium text-slate-600 hover:text-slate-950 transition-colors" data-path="value-solutions" href="value-solutions.html">Value Solutions</a>
+<a class="text-sm font-medium text-slate-600 hover:text-slate-950 transition-colors" data-path="leadership" href="leadership.html">Leadership</a>
+<a class="text-sm font-medium text-slate-600 hover:text-slate-950 transition-colors" data-path="portfolio" href="portfolio.html">Portfolio</a>
+<a class="text-sm font-medium text-slate-600 hover:text-slate-950 transition-colors" data-path="contact-us" href="contact.html">Contact Us</a>
+</nav>
+<!-- Action & Hotline -->
+<div class="flex items-center gap-6">
+<div class="hidden sm:flex flex-col items-end text-right">
+<span class="text-[10px] uppercase font-semibold tracking-wider text-slate-500">Direct Hotline</span>
+<a class="text-sm font-bold text-slate-900 hover:text-brand-600 transition-colors" href="tel:0169180008">016-918 0008</a>
+</div>
+<a class="inline-flex items-center gap-2 px-5 py-2.5 bg-brand-500 hover:bg-brand-600 text-white font-medium text-sm rounded-full transition-all duration-200 shadow-sm hover:shadow-md hover:shadow-brand-500/20" data-path="contact-us" href="contact.html">
+<span>Get Proposal</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<main class="w-full pt-20">
+<!-- 1. Immersive Full-width / Full-bleed Hero header matching finalized Home screen -->
+<section class="relative w-full min-h-[85vh] flex items-center bg-slate-950 overflow-hidden">
+<!-- Full-Bleed Architectural Background Image -->
+<img alt="Prestigious modern luxury skyscraper and executive commercial tower complex in Kuala Lumpur" class="absolute inset-0 w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEXMJp0mZQqpCFLw4yd0knAEF9z0n3m7gxzCEi-LkauDS8DrIpMqYsiOf8MwljZsQhcgYheu4t9r8ye571LO1ks4NELFZ-ugi-llRvGZCFpO9uYDz1SGKahM3_zjQvn3nXE3cOgSbAUpnootC2HtMnqbRWDsaax5jNB4SSBXUUhWLszK1-1jXDItbD4dQ0pst9zhmCoOeVVRpaVePSBznBhvbTpa-wM9sObxADiwjEPqbgSZ0yuTBF4A"/>
+<!-- Deep Architectural Gradient & Vignette Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-slate-950/60"></div>
+<div class="absolute inset-0 bg-slate-950/20 backdrop-blur-[1px]"></div>
+<!-- Hero Content Container -->
+<div class="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-8 py-20 md:py-26">
+<!-- Breadcrumbs in Hero -->
+<div class="flex items-center gap-2 text-xs font-medium text-slate-400 mb-6">
+<a class="hover:text-white transition-colors flex items-center gap-1" data-path="home" href="index.html">
+<span class="material-symbols-outlined text-sm">domain</span> Home
+</a>
+<span class="text-slate-600">/</span>
+<span class="text-brand-500 font-semibold">About Us</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left Text Content -->
+<div class="lg:col-span-8 flex flex-col gap-6">
+<div class="inline-flex items-center gap-2 self-start px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/10 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-brand-500"></span>
+<span class="text-xs font-semibold uppercase tracking-wider text-amber-200">Institutional Heritage &amp; Governance • LPPEH Reg: PM (3) 0162</span>
+</div>
+<h1 class="font-display text-4xl sm:text-5xl lg:text-[54px] font-extrabold text-white tracking-tight leading-[1.12]">
+          Decades of Professional Strata Leadership &amp; Fiduciary Trust
+        </h1>
+<p class="text-slate-300 text-lg sm:text-xl font-normal leading-relaxed max-w-2xl">
+          Pioneer Property Management stands as an accredited pillar in Malaysian real estate management. Guided by statutory mandates under Act 757 and Act 242, we protect, audit, and elevate premier residential, commercial, and mixed developments across the Klang Valley and Peninsular Malaysia.
+        </p>
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center gap-2 px-6 py-3.5 bg-brand-500 hover:bg-brand-600 text-white text-sm font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-brand-500/20" data-path="contact-us" href="contact.html">
+<span>Request Diagnostic Audit</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-2 px-6 py-3.5 bg-white/10 hover:bg-white/15 text-white border border-white/10 backdrop-blur-md text-sm font-semibold rounded-lg transition-all duration-200" href="#credentials">
+<span class="material-symbols-outlined text-base text-amber-400">verified_user</span>
+<span>View Official Licensure</span>
+</a>
+</div>
+<!-- Integrated High-Contrast Stats Banner in Hero -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-white/10 mt-2">
+<div>
+<div class="font-display text-3xl sm:text-4xl font-extrabold text-white">12,800<span class="text-brand-500">+</span></div>
+<div class="text-xs sm:text-sm text-slate-300 font-medium mt-1">Strata Units Managed</div>
+<div class="text-[11px] text-slate-400 mt-0.5">High-rise &amp; mixed-use</div>
+</div>
+<div>
+<div class="font-display text-3xl sm:text-4xl font-extrabold text-white">RM 145M<span class="text-brand-500">+</span></div>
+<div class="text-xs sm:text-sm text-slate-300 font-medium mt-1">Audited Trust Funds</div>
+<div class="text-[11px] text-slate-400 mt-0.5">Zero-leakage fiduciary escrow</div>
+</div>
+<div>
+<div class="font-display text-3xl sm:text-4xl font-extrabold text-brand-500">98.4<span class="text-white">%</span></div>
+<div class="text-xs sm:text-sm text-slate-300 font-medium mt-1">Compliance Index</div>
+<div class="text-[11px] text-slate-400 mt-0.5">SMA 2013 &amp; MPMS pass rate</div>
+</div>
+<div>
+<div class="font-display text-3xl sm:text-4xl font-extrabold text-white">42<span class="text-brand-500">+</span></div>
+<div class="text-xs sm:text-sm text-slate-300 font-medium mt-1">Engineers &amp; Audit Staff</div>
+<div class="text-[11px] text-slate-400 mt-0.5">BEM certified M&amp;E experts</div>
+</div>
+</div>
+</div>
+<!-- Right Floating Accreditation Badge Box -->
+<div class="lg:col-span-4 flex flex-col justify-center">
+<div class="p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/10 shadow-2xl flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+<span class="text-xs font-bold uppercase tracking-wider text-white">Official Board Certification</span>
+</div>
+<span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">FORM Q VALID</span>
+</div>
+<div class="space-y-2 py-2 border-y border-white/10 text-xs">
+<div class="flex justify-between items-center text-slate-300">
+<span>Firm Registered Name</span>
+<span class="font-semibold text-white">Pioneer Property Management</span>
+</div>
+<div class="flex justify-between items-center text-slate-300">
+<span>Board License No.</span>
+<span class="font-semibold text-amber-300">PM (3) 0162</span>
+</div>
+<div class="flex justify-between items-center text-slate-300">
+<span>SSM Certificate</span>
+<span class="font-semibold text-white">CA0356984-X</span>
+</div>
+<div class="flex justify-between items-center text-slate-300">
+<span>Statutory Authority</span>
+<span class="font-semibold text-white">LPPEH Malaysia</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-[11px] text-slate-300">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-brand-500">verified</span>
+Rule 25I Validated 2026
+</span>
+<span class="text-amber-400 font-semibold">Active Practice</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Regulatory Credentials Bar -->
+<section class="w-full bg-slate-50/70 border-b border-slate-100 py-6">
+<div class="max-w-7xl mx-auto px-6 sm:px-8">
+<div class="flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-2 text-slate-500 text-xs font-semibold uppercase tracking-wider">
+<span class="material-symbols-outlined text-brand-500 text-lg">verified</span>
+<span>Official Regulatory Authorities &amp; Practice Renewal:</span>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-3 sm:gap-6">
+<div class="px-4 py-2 bg-white rounded-lg border border-slate-200/80 shadow-xs flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-brand-500"></span>
+<span class="text-xs font-bold text-slate-800">LPPEH</span>
+<span class="text-[11px] text-slate-400">PM (3) 0162</span>
+</div>
+<div class="px-4 py-2 bg-white rounded-lg border border-slate-200/80 shadow-xs flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-slate-400"></span>
+<span class="text-xs font-bold text-slate-800">HRD CORP</span>
+<span class="text-[11px] text-slate-400">Certified Provider</span>
+</div>
+<div class="px-4 py-2 bg-white rounded-lg border border-slate-200/80 shadow-xs flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-slate-400"></span>
+<span class="text-xs font-bold text-slate-800">PEPS MALAYSIA</span>
+<span class="text-[11px] text-slate-400">Valuers &amp; Managers</span>
+</div>
+<div class="px-4 py-2 bg-white rounded-lg border border-slate-200/80 shadow-xs flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-brand-500"></span>
+<span class="text-xs font-bold text-slate-800">MIPFM</span>
+<span class="text-[11px] text-slate-400">Practising Member</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Pristine White Institutional Stewardship Section -->
+<section class="w-full py-24 bg-white">
+<div class="max-w-7xl mx-auto px-6 sm:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left Editorial Story -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<span class="text-xs font-bold uppercase tracking-widest text-brand-600">Chartered &amp; Licensed Practice</span>
+<h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-950 tracking-tight leading-tight">
+          Institutional Stewardship Built on Legal Rigor
+        </h2>
+<p class="text-slate-600 text-base leading-relaxed">
+          Founded on the principle that property management is fundamentally a fiduciary trust, Pioneer Property Management (Registered Firm PM (3) 0162) operates under direct oversight of the Board of Valuers, Appraisers, Estate Agents and Property Managers (LPPEH). With corporate entity registration SSM CA0356984-X, our firm provides licensed assurance to Joint Management Bodies (JMB), Management Corporations (MC), and institutional asset owners across Malaysia.
+        </p>
+<p class="text-slate-600 text-base leading-relaxed">
+          We bridge physical maintenance with statutory rigor. Every building audit, sinking fund forecast, AGM conduct, and preventive maintenance cycle is carried out according to the Malaysian Property Management Standards (MPMS) and the Strata Management Act 2013 (Act 757), safeguarding long-term asset valuations and resident security.
+        </p>
+<!-- 4 Clean Compliance Value Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+<div class="p-5 bg-white rounded-xl border border-slate-200/80 shadow-xs flex flex-col gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-amber-50 text-brand-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">verified_user</span>
+</div>
+<h3 class="text-sm font-bold text-slate-900">Act 757 &amp; Act 242 Certified</h3>
+<p class="text-slate-600 text-xs leading-relaxed">Licensed property practice under LPPEH, adhering strictly to strata tribunal protocols.</p>
+</div>
+<div class="p-5 bg-white rounded-xl border border-slate-200/80 shadow-xs flex flex-col gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-amber-50 text-brand-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">account_balance</span>
+</div>
+<h3 class="text-sm font-bold text-slate-900">Protected Trust Accounts</h3>
+<p class="text-slate-600 text-xs leading-relaxed">Client maintenance and sinking funds segregated in designated licensed financial institutions.</p>
+</div>
+<div class="p-5 bg-white rounded-xl border border-slate-200/80 shadow-xs flex flex-col gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-amber-50 text-brand-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">school</span>
+</div>
+<h3 class="text-sm font-bold text-slate-900">HRD Corp Registered</h3>
+<p class="text-slate-600 text-xs leading-relaxed">Official training provider for continuous technical building audits and FM competencies.</p>
+</div>
+<div class="p-5 bg-white rounded-xl border border-slate-200/80 shadow-xs flex flex-col gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-amber-50 text-brand-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">engineering</span>
+</div>
+<h3 class="text-sm font-bold text-slate-900">Predictive M&amp;E Audits</h3>
+<p class="text-slate-600 text-xs leading-relaxed">Systematic mechanical, electrical, and lift lifecycle maintenance minimizing major failures.</p>
+</div>
+</div>
+</div>
+<!-- Right Column: Institutional Profile & Head Office -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<div class="bg-white p-7 rounded-2xl border border-slate-200/90 shadow-sm flex flex-col gap-5">
+<div class="flex items-center justify-between pb-3 border-b border-slate-100">
+<span class="text-xs font-bold uppercase tracking-wider text-slate-500">Statutory Registration Data</span>
+<span class="px-2.5 py-0.5 bg-emerald-50 text-emerald-700 border border-emerald-200 rounded text-[10px] font-bold uppercase">Active Validity</span>
+</div>
+<div class="flex flex-col divide-y divide-slate-100 text-xs">
+<div class="py-3 flex justify-between items-center">
+<span class="text-slate-500">Firm Registered Name</span>
+<span class="font-bold text-slate-900">Pioneer Property Management</span>
+</div>
+<div class="py-3 flex justify-between items-center">
+<span class="text-slate-500">Board License No.</span>
+<span class="font-bold text-brand-600">PM (3) 0162</span>
+</div>
+<div class="py-3 flex justify-between items-center">
+<span class="text-slate-500">SSM Certificate</span>
+<span class="font-bold text-slate-900">CA0356984-X</span>
+</div>
+<div class="py-3 flex justify-between items-center">
+<span class="text-slate-500">Statutory Authority</span>
+<span class="font-bold text-slate-900">LPPEH Malaysia</span>
+</div>
+<div class="py-3 flex justify-between items-center">
+<span class="text-slate-500">Registered Office</span>
+<span class="font-medium text-slate-800 text-right">Unit 15-3, USJ 9/5M, Subang Jaya</span>
+</div>
+</div>
+<div class="p-3.5 bg-slate-50 rounded-xl border border-slate-100 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-brand-600 text-lg">verified</span>
+<span class="text-xs text-slate-900 font-bold">Official Practice Renewal 2026</span>
+</div>
+<span class="text-[11px] font-bold text-brand-600 uppercase">Rule 25I Validated</span>
+</div>
+</div>
+<!-- Headquarters Photography Card -->
+<div class="relative rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm h-52 bg-slate-100 group">
+<img alt="Modern architectural photography of Pioneer Property Management executive headquarters and high-rise commercial center in Subang Jaya Selangor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEXMJp0mZQqpCFLw4yd0knAEF9z0n3m7gxzCEi-LkauDS8DrIpMqYsiOf8MwljZsQhcgYheu4t9r8ye571LO1ks4NELFZ-ugi-llRvGZCFpO9uYDz1SGKahM3_zjQvn3nXE3cOgSbAUpnootC2HtMnqbRWDsaax5jNB4SSBXUUhWLszK1-1jXDItbD4dQ0pst9zhmCoOeVVRpaVePSBznBhvbTpa-wM9sObxADiwjEPqbgSZ0yuTBF4A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent flex flex-col justify-end p-5">
+<span class="text-[10px] font-bold uppercase tracking-wider text-amber-300">Operations Hub</span>
+<span class="text-sm font-bold text-white mt-0.5">Subang Business Centre, USJ 9, Selangor</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Vision, Mission & Core Fiduciary Pillars: Minimalist White Bento Cards -->
+<section class="w-full py-24 bg-slate-50/70 border-y border-slate-100">
+<div class="max-w-7xl mx-auto px-6 sm:px-8">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="text-xs font-bold uppercase tracking-widest text-brand-600">Guiding Principles</span>
+<h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-950 tracking-tight mt-2">
+          Vision, Mission &amp; Fiduciary Pillars
+        </h2>
+<p class="text-slate-600 text-base mt-3 leading-relaxed">
+          Setting the gold standard for strata asset preservation, resident wellness, and transparent property leadership.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Vision Card -->
+<div class="card-clean-hover p-8 bg-white rounded-2xl border border-slate-200/90 flex flex-col justify-between">
+<div class="flex flex-col gap-5">
+<div class="w-12 h-12 rounded-xl bg-amber-50 text-brand-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">visibility</span>
+</div>
+<div>
+<span class="text-[11px] font-bold uppercase tracking-wider text-slate-500">Forward Horizon</span>
+<h3 class="font-display text-xl font-bold text-slate-950 mt-1 mb-3">Our Vision</h3>
+<p class="text-slate-600 text-sm leading-relaxed">
+              Setting the premier benchmark for property asset protection, sustainable community living, and regulatory integrity across Malaysia and Southeast Asia.
+            </p>
+</div>
+</div>
+<div class="mt-8 pt-4 border-t border-slate-100 flex items-center gap-2 text-brand-600 text-xs font-semibold">
+<span class="material-symbols-outlined text-base">trending_up</span>
+<span>Sustainable asset appreciation</span>
+</div>
+</div>
+<!-- Mission Card -->
+<div class="card-clean-hover p-8 bg-white rounded-2xl border border-slate-200/90 flex flex-col justify-between">
+<div class="flex flex-col gap-5">
+<div class="w-12 h-12 rounded-xl bg-amber-50 text-brand-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">flag</span>
+</div>
+<div>
+<span class="text-[11px] font-bold uppercase tracking-wider text-slate-500">Operational Purpose</span>
+<h3 class="font-display text-xl font-bold text-slate-950 mt-1 mb-3">Our Mission</h3>
+<p class="text-slate-600 text-sm leading-relaxed">
+              Safeguarding co-owner investments through transparent cloud accounting, systematic predictive engineering audits, and proactive vendor stewardship that enhances daily quality of life.
+            </p>
+</div>
+</div>
+<div class="mt-8 pt-4 border-t border-slate-100 flex items-center gap-2 text-brand-600 text-xs font-semibold">
+<span class="material-symbols-outlined text-base">balance</span>
+<span>Disciplined capital allocation</span>
+</div>
+</div>
+<!-- Core Values Card -->
+<div class="card-clean-hover p-8 bg-white rounded-2xl border border-slate-200/90 flex flex-col justify-between">
+<div class="flex flex-col gap-5">
+<div class="w-12 h-12 rounded-xl bg-amber-50 text-brand-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">shield</span>
+</div>
+<div>
+<span class="text-[11px] font-bold uppercase tracking-wider text-slate-500">Institutional Code</span>
+<h3 class="font-display text-xl font-bold text-slate-950 mt-1 mb-3">Core Fiduciary Pillars</h3>
+<ul class="space-y-2.5 text-xs text-slate-600">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-brand-500 text-base flex-shrink-0 mt-0.5">check_circle</span>
+<span><strong class="text-slate-900">Uncompromising Integrity:</strong> Impartial vendor bidding.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-brand-500 text-base flex-shrink-0 mt-0.5">check_circle</span>
+<span><strong class="text-slate-900">Statutory Compliance:</strong> Adherence to Act 757 protocols.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-brand-500 text-base flex-shrink-0 mt-0.5">check_circle</span>
+<span><strong class="text-slate-900">Operational Transparency:</strong> Real-time portal access.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-brand-500 text-base flex-shrink-0 mt-0.5">check_circle</span>
+<span><strong class="text-slate-900">Rapid Escalation:</strong> 24/7 technical incident resolution.</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-8 pt-4 border-t border-slate-100 flex items-center gap-2 text-brand-600 text-xs font-semibold">
+<span class="material-symbols-outlined text-base">verified_user</span>
+<span>Fiduciary excellence guaranteed</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Verified Licensure & LPPEH Form Q Document Showcase -->
+<section class="w-full py-24 bg-white" id="credentials">
+<div class="max-w-7xl mx-auto px-6 sm:px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div class="max-w-2xl">
+<span class="text-xs font-bold uppercase tracking-widest text-brand-600">Verified Credentials &amp; Licensure</span>
+<h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-950 tracking-tight mt-2">
+          Official Regulatory Authorities &amp; Practice Renewal
+        </h2>
+<p class="text-slate-600 text-base mt-3 leading-relaxed">
+          Under Board of Valuers, Appraisers, Estate Agents and Property Managers (LPPEH) Rule 25I, Pioneer Property Management is officially empowered to operate property management firm practice under license PM (3) 0162.
+        </p>
+</div>
+<a class="inline-flex items-center gap-2 px-5 py-3 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-lg transition-colors shadow-sm self-start md:self-auto" download="Pioneer-Property-Management-Corporate-Profile.pdf" href="#">
+<span class="material-symbols-outlined text-base">download</span>
+<span>Download Corporate Profile (PDF)</span>
+</a>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Certificate Preview Container -->
+<div class="lg:col-span-6 bg-slate-50/70 p-6 sm:p-8 rounded-2xl border border-slate-200/90 flex flex-col justify-between gap-6">
+<div class="flex items-center justify-between pb-3 border-b border-slate-200">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-brand-600">workspace_premium</span>
+<span class="text-sm font-bold text-slate-900">LPPEH Form Q Certificate (Certificate No. 0383)</span>
+</div>
+<span class="px-2.5 py-1 bg-amber-50 text-brand-700 border border-brand-200 rounded text-[10px] font-bold uppercase">Valid Until 31 Dec 2026</span>
+</div>
+<!-- Pristine Certificate Image Frame -->
+<div class="relative bg-white rounded-xl p-4 sm:p-6 border border-slate-200/80 shadow-xs flex items-center justify-center overflow-hidden group">
+<img alt="Official LPPEH Form Q Rule 25I Certificate No 0383 for Pioneer Property Management Firm PM (3) 0162" class="max-h-[500px] w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzdDqG9j1h8_BusmutKAWIC_3DgtxLXtFW2HvMx6CxqCvu9Q-yZhk_XqbkeAV-PzOOXtvecssm3McPoidG9D7Oou1AUcE5iIE1MX-oEcUaAfTyvgKzYtveEM8zHSoTouwIfXI6gpTQ21SgauADrBasCOfjSQCyaSlehXXkTsoBAI5mk1ZhrGRLyzuc8SiL36X-znn2duemechDGlnbsxSkux9m1nNJuK3IeKEQxe072MQ3MUU6ebw79ADrLE8S8yjUlBw"/>
+<div class="absolute bottom-4 right-4 bg-slate-900/90 text-white px-3 py-1 rounded backdrop-blur text-[11px] font-semibold flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-xs">zoom_in</span> Official Certified Document
+</div>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-slate-500 pt-1">
+<span>Registration: <strong class="text-slate-800">PM (3) 0162</strong></span>
+<span>Issue Date: <strong class="text-slate-800">11 December 2025</strong></span>
+<span>Board Registrar Endorsed</span>
+</div>
+</div>
+<!-- Accreditations & Sinking Fund Protection Frame -->
+<div class="lg:col-span-6 flex flex-col justify-between gap-6">
+<!-- Institutional Accreditation Badges Section -->
+<div class="bg-white p-7 rounded-2xl border border-slate-200/90 shadow-sm flex flex-col gap-6">
+<span class="text-xs font-bold uppercase tracking-wider text-slate-900">Accredited Professional Bodies</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- LPPEH Badge -->
+<div class="p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="text-sm font-bold text-slate-900">LPPEH</span>
+<span class="w-2 h-2 rounded-full bg-brand-500"></span>
+</div>
+<span class="text-[10px] font-bold text-brand-600 uppercase tracking-wider">Regulator &amp; Registry</span>
+<p class="text-xs text-slate-600">Board of Valuers, Appraisers, Estate Agents and Property Managers.</p>
+</div>
+<!-- HRD Corp Badge -->
+<div class="p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="text-sm font-bold text-slate-900">HRD CORP</span>
+<span class="w-2 h-2 rounded-full bg-brand-500"></span>
+</div>
+<span class="text-[10px] font-bold text-brand-600 uppercase tracking-wider">Registered Provider</span>
+<p class="text-xs text-slate-600">Ministry of Human Resources continuous competency certification.</p>
+</div>
+<!-- PEPS Badge -->
+<div class="p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="text-sm font-bold text-slate-900">PEPS</span>
+<span class="w-2 h-2 rounded-full bg-brand-500"></span>
+</div>
+<span class="text-[10px] font-bold text-brand-600 uppercase tracking-wider">Charter Member</span>
+<p class="text-xs text-slate-600">Association of Valuers, Property Managers, Estate Agents &amp; Property Consultants.</p>
+</div>
+<!-- MIPFM Badge -->
+<div class="p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="text-sm font-bold text-slate-900">MIPFM</span>
+<span class="w-2 h-2 rounded-full bg-brand-500"></span>
+</div>
+<span class="text-[10px] font-bold text-brand-600 uppercase tracking-wider">Institute Member</span>
+<p class="text-xs text-slate-600">Malaysian Institute of Property and Facility Managers technical alliance.</p>
+</div>
+</div>
+</div>
+<!-- Sinking Fund & Fiduciary Audit High-Trust Banner -->
+<div class="bg-slate-950 text-white p-7 sm:p-8 rounded-2xl shadow-xl flex flex-col gap-4 relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="text-xs font-bold uppercase tracking-widest text-brand-500">Statutory Sinking Fund Protection</span>
+<span class="material-symbols-outlined text-brand-500 text-2xl">account_balance_wallet</span>
+</div>
+<h3 class="font-display text-xl font-bold text-white tracking-tight">Client Trust Accounts Under Fiduciary Act 242</h3>
+<p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+          All collections, maintenance fees, and sinking funds are held in ring-fenced escrow accounts under registered LPPEH fiduciary oversight. Neither Pioneer nor unauthorized parties may liquidate or commingle operational reserves without explicit JMB/MC joint dual-authorization.
+        </p>
+<div class="pt-2 border-t border-white/10 flex flex-wrap items-center gap-4 text-xs font-medium text-amber-200">
+<span class="inline-flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-brand-500">lock</span> Fully Segregated Escrows
+</span>
+<span class="inline-flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-brand-500">rule</span> Annual External Audit
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Act 757 Operational Protocols: Clean 4-Column / Grid Layout -->
+<section class="w-full py-24 bg-slate-50/70 border-t border-slate-100">
+<div class="max-w-7xl mx-auto px-6 sm:px-8">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="text-xs font-bold uppercase tracking-widest text-brand-600">Act 757 Operational Protocols</span>
+<h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-950 tracking-tight mt-2">
+          How We Manage Your Strata Asset
+        </h2>
+<p class="text-slate-600 text-base mt-3 leading-relaxed">
+          Every property under Pioneer's management adheres to strict, transparent operational milestones.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Item 01 -->
+<div class="card-clean-hover p-6 sm:p-7 bg-white rounded-2xl border border-slate-200/90 flex items-start gap-5">
+<div class="w-12 h-12 rounded-xl bg-amber-50 text-brand-600 flex items-center justify-center font-display font-extrabold text-lg flex-shrink-0">
+          01
+        </div>
+<div class="flex flex-col gap-1.5">
+<h4 class="font-display text-base font-bold text-slate-950">Initial Building Handover &amp; Diagnostic Audit</h4>
+<p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            Comprehensive baseline review of all M&amp;E systems, lift certifications, fire protection systems, architectural defects, and historical maintenance accounts.
+          </p>
+</div>
+</div>
+<!-- Item 02 -->
+<div class="card-clean-hover p-6 sm:p-7 bg-white rounded-2xl border border-slate-200/90 flex items-start gap-5">
+<div class="w-12 h-12 rounded-xl bg-amber-50 text-brand-600 flex items-center justify-center font-display font-extrabold text-lg flex-shrink-0">
+          02
+        </div>
+<div class="flex flex-col gap-1.5">
+<h4 class="font-display text-base font-bold text-slate-950">Transparent Sinking Fund Projection (10-Yr Plan)</h4>
+<p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            Long-term capital budgeting for lift overhauls, exterior facade repainting, waterproofing, and water pump replacement to avert emergency levy assessments.
+          </p>
+</div>
+</div>
+<!-- Item 03 -->
+<div class="card-clean-hover p-6 sm:p-7 bg-white rounded-2xl border border-slate-200/90 flex items-start gap-5">
+<div class="w-12 h-12 rounded-xl bg-amber-50 text-brand-600 flex items-center justify-center font-display font-extrabold text-lg flex-shrink-0">
+          03
+        </div>
+<div class="flex flex-col gap-1.5">
+<h4 class="font-display text-base font-bold text-slate-950">Defaulter Recovery &amp; Form 11 Enforcement</h4>
+<p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            Systematic notice issuance according to statutory schedules under Act 757, leading to high collection rates while preserving community harmony.
+          </p>
+</div>
+</div>
+<!-- Item 04 -->
+<div class="card-clean-hover p-6 sm:p-7 bg-white rounded-2xl border border-slate-200/90 flex items-start gap-5">
+<div class="w-12 h-12 rounded-xl bg-amber-50 text-brand-600 flex items-center justify-center font-display font-extrabold text-lg flex-shrink-0">
+          04
+        </div>
+<div class="flex flex-col gap-1.5">
+<h4 class="font-display text-base font-bold text-slate-950">AGM &amp; EGM Statutory Execution</h4>
+<p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            End-to-end administration of mandatory General Meetings, proxy verification, motion management, and statutory filings with the Commissioner of Buildings (COB).
+          </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Call to Action Section identical to Home CTA styling -->
+<section class="w-full py-20 bg-white">
+<div class="max-w-7xl mx-auto px-6 sm:px-8">
+<div class="relative rounded-3xl bg-slate-950 text-white p-10 sm:p-14 lg:p-16 overflow-hidden shadow-xl">
+<div class="max-w-3xl flex flex-col gap-5 relative z-10">
+<span class="text-xs font-bold uppercase tracking-widest text-brand-500">Partner With Certified Fiduciaries</span>
+<h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+          Is Your Joint Management Body or MC Ready for True Fiduciary Governance?
+        </h2>
+<p class="text-slate-300 text-base sm:text-lg leading-relaxed font-normal">
+          Request a complimentary technical diagnostic or sinking fund health assessment from Pioneer's registered building managers and engineers.
+        </p>
+<div class="flex flex-wrap items-center gap-4 pt-4">
+<a class="inline-flex items-center gap-2 px-6 py-3.5 bg-brand-500 hover:bg-brand-600 text-white font-semibold text-sm rounded-lg transition-all duration-200 shadow-sm" data-path="contact-us" href="contact.html">
+<span>Request Diagnostic Audit</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-2 px-6 py-3.5 bg-white/10 hover:bg-white/15 text-white font-semibold text-sm rounded-lg transition-all duration-200 border border-white/10" href="tel:0169180008">
+<span class="material-symbols-outlined text-base text-brand-500">call</span>
+<span>016-918 0008</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Unified Minimalist Footer -->
+<footer class="w-full bg-slate-50 border-t border-slate-200/80">
+<div class="max-w-7xl mx-auto px-6 sm:px-8 py-16">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+<!-- Col 1: About & Registered ID -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<img alt="Pioneer Property Management Crest" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxk3KRIvnSmpsS5wVe8uQpuNx6MkZYGAurDU9mLPjet1xoI01oW3htb77WoEfW-o1F-X97GJc7fXbahszz27QaZpNyFLFhAGl5-OmI0ImErT1pseXqozcDf_nm3pxU_fk9xDnqjhGiP3ydKlqL6Pj8FSLsf2qqXKWaSpIoRDIFBOXnEGJzmvs01On1e2iyliRx7uGtQvVCN8HMQjNjchbdaVHZ6P_liVHEkgLAKuRDjcIo_Ccm3usiAZ5O-bULkpy9k1A"/>
+<span class="font-display font-bold text-slate-900 text-base tracking-tight uppercase">Pioneer Property</span>
+</div>
+<span class="text-xs font-bold text-brand-600 uppercase tracking-wider">Registered Firm PM (3) 0162</span>
+<p class="text-slate-600 text-xs leading-relaxed">
+        Providing licensed fiduciary property management, facilities auditing, and strategic strata management solutions across residential and commercial developments in Malaysia.
+      </p>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2.5 py-1 bg-white border border-slate-200 text-slate-700 text-[10px] font-bold rounded">LPPEH</span>
+<span class="px-2.5 py-1 bg-white border border-slate-200 text-slate-700 text-[10px] font-bold rounded">HRD CORP</span>
+<span class="px-2.5 py-1 bg-white border border-slate-200 text-slate-700 text-[10px] font-bold rounded">MIPFM</span>
+<span class="px-2.5 py-1 bg-white border border-slate-200 text-slate-700 text-[10px] font-bold rounded">PEPS</span>
+</div>
+</div>
+<!-- Col 2: Principal Office -->
+<div class="flex flex-col gap-3">
+<div class="text-xs font-bold uppercase tracking-wider text-slate-900">Principal Office</div>
+<div class="text-xs text-slate-600 leading-relaxed space-y-1">
+<p class="font-medium text-slate-800">Subang Business Centre</p>
+<p>Unit 15-3, Jalan USJ 9/5M</p>
+<p>47620 Subang Jaya, Selangor</p>
+</div>
+<div class="pt-2 text-xs text-slate-600 space-y-1">
+<p><span class="font-medium text-slate-700">Tel:</span> 016 918 0008</p>
+<p><span class="font-medium text-slate-700">Email:</span> pioneerpropertymanagement01@gmail.com</p>
+</div>
+</div>
+<!-- Col 3: Navigation -->
+<div class="flex flex-col gap-3">
+<div class="text-xs font-bold uppercase tracking-wider text-slate-900">Corporate Navigation</div>
+<div class="flex flex-col gap-2 text-xs text-slate-600">
+<a class="hover:text-slate-950 transition-colors" data-path="home" href="index.html">Home Overview</a>
+<a class="hover:text-slate-950 transition-colors" data-path="about-us" href="about.html">About the Firm</a>
+<a class="hover:text-slate-950 transition-colors" data-path="services" href="services.html">Strata Management Services</a>
+<a class="hover:text-slate-950 transition-colors" data-path="value-solutions" href="value-solutions.html">Value Solutions &amp; Audits</a>
+<a class="hover:text-slate-950 transition-colors" data-path="leadership" href="leadership.html">Executive Leadership</a>
+<a class="hover:text-slate-950 transition-colors" data-path="portfolio" href="portfolio.html">Managed Portfolios</a>
+</div>
+</div>
+<!-- Col 4: Statutory Compliance -->
+<div class="flex flex-col gap-3">
+<div class="text-xs font-bold uppercase tracking-wider text-slate-900">Statutory Compliance</div>
+<p class="text-xs text-slate-600 leading-relaxed">
+        Operations executed in strict adherence to Strata Management Act 2013 (Act 757), Valuers Act 1981 (Act 242), and the Malaysian Property Management Standards (MPMS).
+      </p>
+<div class="p-3 bg-white rounded-lg border border-slate-200">
+<div class="text-[11px] font-bold uppercase text-brand-600 mb-0.5">Audited Trust Custody</div>
+<div class="text-[11px] text-slate-500 leading-normal">Independent segregation of client maintenance and sinking funds.</div>
+</div>
+</div>
+</div>
+<!-- Bottom Bar -->
+<div class="mt-14 pt-6 border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+<div>© 2025 Pioneer Property Management (PM (3) 0162). All statutory rights reserved.</div>
+<div class="flex items-center gap-6">
+<a class="hover:text-slate-900 transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a>
+<a class="hover:text-slate-900 transition-colors" data-path="terms-of-service" href="#">Terms of Fiduciary Engagement</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
